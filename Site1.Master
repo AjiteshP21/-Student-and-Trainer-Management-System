@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="ADONetWebApp.Site1" %>
+
+<%@ Register Src="~/UserControl/Header.ascx" TagPrefix="MUC" TagName="Header" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+    <body>
+        <div class="container">
+            <MUC:Header ID="Header" runat="server" />
+
+                <div>
+                    <asp:ContentPlaceHolder ID="MaincontentHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>                                                                                                                                                                                                                                                                                          
+                <hr />
+                <p>Copywrite @Ajitesh2024 </p>
+                <%--<MUC:Header ID="HeaderinBottom" runat="server" />--%>
+        </div>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
